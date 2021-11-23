@@ -21,8 +21,12 @@
         
         .story__media1 {
             grid-area: story-1;
+            display: flex;
+            justify-content: center;
+            align-items: center;
             box-shadow: 0 0 20px black;
             position: relative;
+            cursor: pointer;
         }
         
         .story__back {
@@ -31,18 +35,28 @@
             flex-direction: column;
             align-items: center;
             position: absolute;
-            background: rgba(128, 128, 128, 0.493);
-            //width: 17rem;
-            //height: 30rem;
-            left: 50%;
-            right: 50%;
+            //background: rgba(128, 128, 128, 0.493);
+            max-width: 17.5rem;
             z-index: 1;
             opacity: 0;
-            &:hover {
-                opacity: 8;
-                cursor: pointer;
-                transition: .4s linear;
-            }
+        }
+        
+        .story__media1:hover .story__back,
+        .story__media2:hover .story__back,
+        .story__media3:hover .story__back,
+        .story__media4:hover .story__back {
+            opacity: 8;
+            cursor: pointer;
+            transition: .2s linear;
+        }
+        
+        .story__media1:hover .add__discribe,
+        .story__media2:hover .add__discribe,
+        .story__media3:hover .add__discribe,
+        .story__media4:hover .add__discribe {
+            opacity: 8;
+            cursor: pointer;
+            transition: 1s linear;
         }
         
         .story__backImg {
@@ -60,27 +74,35 @@
             border: 1px solid transparent;
             border-radius: 10px;
             opacity: 0;
-            &:hover {
-                opacity: 1;
-                transition: .5s linear;
-            }
         }
         
         .story__media2 {
             grid-area: story-2;
+            display: flex;
+            justify-content: center;
+            align-items: center;
             box-shadow: 0 0 20px black;
             position: relative;
+            cursor: pointer;
         }
         
         .story__media3 {
             grid-area: story-3;
+            display: flex;
+            justify-content: center;
+            align-items: center;
             box-shadow: 0 0 20px black;
             position: relative;
+            cursor: pointer;
         }
         
         .story__media4 {
             grid-area: story-4;
+            display: flex;
+            justify-content: center;
+            align-items: center;
             box-shadow: 0 0 20px black;
             position: relative;
+            cursor: pointer;
         }
         /*media*/

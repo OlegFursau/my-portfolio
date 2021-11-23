@@ -1,0 +1,86 @@
+        .story {
+            max-width: 110rem;
+            margin: 5rem auto;
+            display: flex;
+            justify-content: center;
+        }
+        
+        .story__grid {
+            display: grid;
+            max-width: 78rem;
+            grid-template-columns: repeat(4, 1fr);
+            grid-template-areas: "story-1 story-2 story-3 story-4";
+            gap: 2rem;
+            margin: 0 auto;
+            padding: 0 1rem;
+        }
+        
+        .story__img {
+            max-width: 100%;
+        }
+        
+        .story__media1 {
+            grid-area: story-1;
+            box-shadow: 0 0 20px black;
+            position: relative;
+        }
+        
+        .story__back {
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+            align-items: center;
+            position: absolute;
+            background: rgba(128, 128, 128, 0.493);
+            //width: 17rem;
+            //height: 30rem;
+            left: 50%;
+            right: 50%;
+            z-index: 1;
+            opacity: 0;
+            &:hover {
+                opacity: 8;
+                cursor: pointer;
+                transition: .4s linear;
+            }
+        }
+        
+        .story__backImg {
+            fill: white;
+            width: 6rem;
+            height: 6rem;
+        }
+        
+        .add__discribe {
+            font-size: 1.5rem;
+            padding: .5rem;
+            color: black;
+            background-color: rgb(216, 216, 216);
+            margin: 1rem auto;
+            border: 1px solid transparent;
+            border-radius: 10px;
+            opacity: 0;
+            &:hover {
+                opacity: 1;
+                transition: .5s linear;
+            }
+        }
+        
+        .story__media2 {
+            grid-area: story-2;
+            box-shadow: 0 0 20px black;
+            position: relative;
+        }
+        
+        .story__media3 {
+            grid-area: story-3;
+            box-shadow: 0 0 20px black;
+            position: relative;
+        }
+        
+        .story__media4 {
+            grid-area: story-4;
+            box-shadow: 0 0 20px black;
+            position: relative;
+        }
+        /*media*/

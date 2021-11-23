@@ -1,0 +1,9 @@
+.grid {
+    max-width: 140rem;
+    padding: 0 1rem;
+    margin: 1rem auto;
+    display: grid;
+    grid-template-columns: 30rem 1fr;
+    grid-template-rows: 1fr 21rem 44.6rem 1fr;
+    gap: 2rem;
+}

@@ -26,7 +26,7 @@
     text-align: left;
 }
 
-.post__two {
+.post__container {
     max-width: 76rem;
     margin: 0rem auto;
     background: $colorSideBar;
@@ -38,7 +38,7 @@
 .post__imgFlex {
     display: flex;
     justify-content: center;
-    margin-bottom: 2.5rem;
+    max-width: 100%;
 }
 
 .post__img {

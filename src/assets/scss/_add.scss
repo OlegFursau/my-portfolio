@@ -20,11 +20,14 @@
             color: white;
             background-color: $colorbar;
             max-height: 7.4rem;
-            max-width: 60rem;
+            max-width: 600rem;
             border: none;
             font-size: 1.5rem;
             line-height: 1.2;
             border-radius: 10px;
+            &:focus-visible {
+                border: none;
+            }
         }
         
         .add__blockBtn {

@@ -1,0 +1,66 @@
+.storis__container {
+    max-width: 76rem;
+    margin: 2rem auto;
+    background: $colorSideBar;
+    padding: 2.5rem;
+    border-radius: 10px;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.815);
+}
+
+.storis__block {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+
+.storis__img {
+    display: block;
+    max-width: 100%;
+    text-align: center;
+    border-radius: 10px;
+}
+
+.storis__svg {
+    position: absolute;
+    max-width: 100%;
+    width: 5.3rem;
+    top: 40%;
+    right: 50%;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 1;
+    &:hover {
+        fill: white;
+        transition: .2s linear;
+        padding: .9rem;
+        border: 2px solid white;
+        border-radius: 30%;
+    }
+}
+
+.storis__text {
+    color: $colorText;
+    font-size: 1.8rem;
+    font-weight: 500;
+    line-height: 1.2;
+    margin: 2.5rem 0 1.9rem;
+    max-width: 70.4rem;
+}
+
+.storis__down {
+    padding-bottom: 2rem;
+}
+
+@media (max-width: 400px) {
+    .storis__svg {
+        max-width: 100%;
+        width: 3.5 rem;
+    }
+    .storis__img {
+        margin: 0;
+    }
+    .storis__link {
+        font-size: 1.2rem;
+        margin-left: 1rem;
+    }
+}
